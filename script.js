@@ -8,8 +8,8 @@ function myFunction() {
     inputRecieved = false;
   }
 
-  if (isNaN(us) || us < 0 || us == "") {
-    alert("Not a time of usage!");
+  if (isNaN(us) || us < 0 || us > 24 || us == "") {
+    alert("Usage must be between 0 and 24 hours!");
     inputRecieved = false;
   }
 
