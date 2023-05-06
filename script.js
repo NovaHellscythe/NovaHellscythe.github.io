@@ -14,7 +14,8 @@ function myFunction() {
   }
 
   if (inputRecieved) {
-    var out = (age - 6) * 365 * us;
+    var temp = (age - 6) * 365 * us;
+    var out = parseFloat(temp.toFixed(1));
     document.getElementById("screenHours").innerHTML = out;
     document.getElementById("screenDays").innerHTML = out / 24;
     document.getElementById("screenYears").innerHTML = out / 24 / 365;
