@@ -14,10 +14,13 @@ function myFunction() {
   }
 
   if (inputRecieved) {
-    var temp = (age - 6) * 365 * us;
-    var out = parseFloat(temp.toFixed(1));
-    document.getElementById("screenHours").innerHTML = out;
-    document.getElementById("screenDays").innerHTML = out / 24;
-    document.getElementById("screenYears").innerHTML = out / 24 / 365;
+    var outHours = (age - 6) * 365 * us;
+    document.getElementById("screenHours").innerHTML = outHours;
+    var outDaysTmp = outHours / 24;
+    var outDays = parseFloat(outDaysTmp.toFixed(1));
+    document.getElementById("screenDays").innerHTML = outDays;
+    var outYearsTmp = outDays / 365;
+    var outYears = parseFloat(outYearsTmp.toFixed(1));
+    document.getElementById("screenYears").innerHTML = outYears;
   }
 }
