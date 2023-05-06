@@ -20,7 +20,7 @@ function myFunction() {
     var outDays = parseFloat(outDaysTmp.toFixed(1));
     document.getElementById("screenDays").innerHTML = outDays;
     var outYearsTmp = outDays / 365;
-    var outYears = parseFloat(outYearsTmp.toFixed(1));
-    document.getElementById("screenYears").innerHTML = outYears;
+    var outYears1 = parseFloat(outYearsTmp.toFixed(1));
+    document.getElementById("screenYears").innerHTML = outYears1;
   }
 }
