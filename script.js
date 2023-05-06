@@ -3,8 +3,8 @@ function myFunction() {
   var age = document.getElementById("age").value;
   var inputRecieved = true;
 
-  if (isNaN(age) || age < 1 || age > 100) {
-    alert("The age must be a number between 1 and 100");
+  if (isNaN(age) || age < 6 || age > 100) {
+    alert("The age must be a number between 6 and 100");
     inputRecieved = false;
   }
 
