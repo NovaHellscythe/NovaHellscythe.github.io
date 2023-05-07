@@ -1,7 +1,8 @@
 body {
-  background: linear-gradient(270deg, #eb92be, #ffef78)
+  background: linear-gradient(270deg, #eb92be, #ffef78);
 }
 
-#all {
+div {
+  font-size: large;
   text-align: center;
 }
