@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP</title>
     <link href="styles.css" rel="stylesheet">
+    <script>
+    const x = document.getElementById("result");
+    if (typeof(Storage) !== "undefined") {
+        x.innerHTML = "Your browser supports Web storage!";
+    } else {
+        x.innerHTML = "Sorry, no Web storage support!";
+    }
+</script>
 </head>
 <body>
     <div class="MPPage" id="all">    
