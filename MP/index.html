@@ -12,20 +12,8 @@
         <a href="test.html">test</a>
         <section class="screen" id="result"></section><br>
     </div>
-    <script>
-    function clickCounter() {
-        const x = document.getElementById("result");
-        if (typeof(Storage) !== "undefined") {
-            if (sessionStorage.clickcount) {
-                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-            } else {
-                sessionStorage.clickcount = 1;
-            }
-            x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
-        } else {
-            x.innerHTML = "Sorry, no Web storage support!";
-        }
-    }
-    </script>
+    <form action="test.html">
+    <input type="submit" value="Go to Google" />
+    </form>
 </body>
 </html>
