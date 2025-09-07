@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setup</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="setup.js"></script>
 </head>
 <body>
     <div>
         <form action="index.html">
             <input type="submit" value="Go back" />
         </form>
+        <p>Number of players:</p>
+        <input type="text" id="numPlayers" size="40" name="numPlayers"><br>
+        <input type="button" value="Calculate" onclick="setup()"/>
     </div>
 </body>
 </html>
