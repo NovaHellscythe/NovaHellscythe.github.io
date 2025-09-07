@@ -1,6 +1,6 @@
 function main() {
     if (isNaN(Number(localStorage.numPlayers))) {
-        alert("Number of players is not defined")
+        document.getElementById("screenNumPlayers").innerHTML = "Number of players is not set!"
     } else {
         document.getElementById("screenNumPlayers").innerHTML = Number(localStorage.numPlayers)
     }
