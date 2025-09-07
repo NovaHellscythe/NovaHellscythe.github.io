@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP</title>
     <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="MPPage" id="all">    
+        <a href="test.html">test</a>
+        <section class="screen" id="result"></section><br>
+    </div>
     <script>
     const x = document.getElementById("result");
     if (typeof(Storage) !== "undefined") {
@@ -13,12 +19,6 @@
     } else {
         x.innerHTML = "Sorry, no Web storage support!";
     }
-</script>
-</head>
-<body>
-    <div class="MPPage" id="all">    
-        <a href="test.html">test</a>
-        <section class="screen" id="result"></section><br>
-    </div>
+    </script>
 </body>
 </html>
