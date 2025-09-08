@@ -11,7 +11,7 @@ function test() {
         bloom: "-"
     };
     localStorage.comb = JSON.stringify(test);
-    document.getElementById("screenTest").innerHTML = JSON.parse(localStorage.comb);
+    document.getElementById("screenTest").innerHTML = localStorage.comb;
 }
 
 function main() {
