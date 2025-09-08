@@ -10,8 +10,8 @@ function test() {
     const test = {
         bloom: "-"
     };
-    localStorage.comb = test;
-    document.getElementById("screenTest").innerHTML = String(localStorage.comb);
+    localStorage.comb = JSON.stringify(test);
+    document.getElementById("screenTest").innerHTML = JSON.parse(localStorage.comb);
 }
 
 function main() {
