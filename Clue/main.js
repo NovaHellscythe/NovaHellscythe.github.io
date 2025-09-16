@@ -16,6 +16,8 @@ function setTest() {
 function showTest() {
     if (localStorage.comb) {
         document.getElementById("screenTest").innerHTML = localStorage.comb;
+    } else {
+        document.getElementById("screenTest").innerHTML = "Comb is not set!";
     }
 }
 
