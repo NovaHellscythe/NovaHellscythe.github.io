@@ -39,10 +39,10 @@ function setupDeck() {
 }
 
 function showAll() {
+    setupDeck();
+    
     showNumPlay();
     showTest();
-
-    setupDeck();
     showDeck();
 }
 
