@@ -18,5 +18,9 @@ function setupDeck() {
         Weapons: ["DOLCH", "PISTOLE", "SEIL", "HEIZUNGSROHR", "ROHRZANGE", "LEUCHTER"],
         Locations: ["KUECHE", "MUSIKZIMMER", "ARBEITSZIMMER", "WINTERGARTEN", "BILLIARDZIMMER", "HALLE", "SPEISEZIMMER", "SALON", "BIBLIOTHEK"]
     };
-    localStorage.FULLDECK = JSON.stringify(test)
+    localStorage.FULLDECK = JSON.stringify(FULLDECK);
+}
+
+function setup() {
+    setupDeck()
 }
