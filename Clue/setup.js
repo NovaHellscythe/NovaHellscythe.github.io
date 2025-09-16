@@ -15,6 +15,6 @@ function setup() {
 
     if (inputRecieved) {
         localStorage.numPlayers = numPlayers;
-        localStorage.FULLDECK = FULLDECK
+        localStorage.FULLDECK = JSON.stringify(FULLDECK)
     }
 }
