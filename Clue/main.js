@@ -6,15 +6,27 @@ function showNumPlay() {
     }
 }
 
-function test() {
+function setTest() {
     const test = {
         bloom: "-"
     };
     localStorage.comb = JSON.stringify(test);
-    document.getElementById("screenTest").innerHTML = localStorage.comb;
+}
+
+function showTest() {
+    if (localStorage.comb) {
+        document.getElementById("screenTest").innerHTML = localStorage.comb;
+    }
+}
+
+function reset() {
+    localStorage.clear();
+    showNumPlay();
+    showTest();
 }
 
 function main() {
     showNumPlay()
-    test()
+    setTest()
+    showTest()
 }
