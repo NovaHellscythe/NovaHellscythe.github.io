@@ -11,16 +11,3 @@ function setupNumPlayers() {
         localStorage.numPlayers = numPlayers;
     }
 }
-
-function setupDeck() {
-    const FULLDECK = {
-        Characters: ["BLOOM", "GLORIA", "PORZ", "GRUEN", "WEISS", "GATOW"],
-        Weapons: ["DOLCH", "PISTOLE", "SEIL", "HEIZUNGSROHR", "ROHRZANGE", "LEUCHTER"],
-        Locations: ["KUECHE", "MUSIKZIMMER", "ARBEITSZIMMER", "WINTERGARTEN", "BILLIARDZIMMER", "HALLE", "SPEISEZIMMER", "SALON", "BIBLIOTHEK"]
-    };
-    localStorage.FULLDECK = JSON.stringify(FULLDECK);
-}
-
-function setup() {
-    setupDeck()
-}

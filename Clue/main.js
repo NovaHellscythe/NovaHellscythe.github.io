@@ -29,16 +29,29 @@ function showDeck() {
     }
 }
 
-function reset() {
-    localStorage.clear();
+function setupDeck() {
+    const FULLDECK = {
+        Characters: ["BLOOM", "GLORIA", "PORZ", "GRUEN", "WEISS", "GATOW"],
+        Weapons: ["DOLCH", "PISTOLE", "SEIL", "HEIZUNGSROHR", "ROHRZANGE", "LEUCHTER"],
+        Locations: ["KUECHE", "MUSIKZIMMER", "ARBEITSZIMMER", "WINTERGARTEN", "BILLIARDZIMMER", "HALLE", "SPEISEZIMMER", "SALON", "BIBLIOTHEK"]
+    };
+    localStorage.FULLDECK = JSON.stringify(FULLDECK);
+}
+
+function showAll() {
     showNumPlay();
     showTest();
+
+    setupDeck();
     showDeck();
 }
 
+function reset() {
+    localStorage.clear();
+    showAll()
+}
+
 function main() {
-    showNumPlay()
     setTest()
-    showTest()
-    showDeck()
+    showAll()
 }
