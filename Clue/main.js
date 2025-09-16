@@ -21,14 +21,24 @@ function showTest() {
     }
 }
 
+function showDeck() {
+    if (!(localStorage.FULLDECK == null)) {
+        document.getElementById("screenDeck").innerHTML = localStorage.FULLDECK;
+    } else {
+        document.getElementById("screenDeck").innerHTML = "FullDeck is not set!";
+    }
+}
+
 function reset() {
     localStorage.clear();
     showNumPlay();
     showTest();
+    showDeck();
 }
 
 function main() {
     showNumPlay()
     setTest()
     showTest()
+    showDeck()
 }
