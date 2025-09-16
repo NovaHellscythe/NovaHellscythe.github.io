@@ -11,10 +11,14 @@ function setup() {
         Characters: ["BLOOM", "GLORIA", "PORZ", "GRUEN", "WEISS", "GATOW"],
         Weapons: ["DOLCH", "PISTOLE", "SEIL", "HEIZUNGSROHR", "ROHRZANGE", "LEUCHTER"],
         Locations: ["KUECHE", "MUSIKZIMMER", "ARBEITSZIMMER", "WINTERGARTEN", "BILLIARDZIMMER", "HALLE", "SPEISEZIMMER", "SALON", "BIBLIOTHEK"]
-    }
+    };
+
+    const test = {
+        bloom: "-"
+    };
 
     if (inputRecieved) {
         localStorage.numPlayers = numPlayers;
-        localStorage.FULLDECK = JSON.stringify(FULLDECK)
+        localStorage.FULLDECK = JSON.stringify(test)
     }
 }
