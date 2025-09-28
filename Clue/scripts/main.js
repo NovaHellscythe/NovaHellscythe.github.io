@@ -55,3 +55,11 @@ function main() {
     setTest()
     showAll()
 }
+
+function startGame() {
+    if (localStorage.numPlayers != null) {
+        location.href = "game.html"
+    } else {
+        alert("The number of players must not be null!")
+    }
+}
