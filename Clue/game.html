@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clue</title>
     <link href="css/styles.css" rel="stylesheet">
-    <script src="scripts/game.js"></script>
 </head>
 <body onload="main()">
     <div>
@@ -18,5 +17,28 @@
         <p>Your Hand:</p>
         <section class="screen" id="screenHand">test</section><br>
     </div>
+    <div>
+        <input type="text" id="newHead" size="40" name="newHead">
+        <button id="ath">add Table Header</button>
+    </div>
+    <div>
+        <button id="sutb">Setup Table</button>
+    </div>
+    <div>
+        <button id="ateb">add Table element</button>
+    </div>
+    <div>
+        <p id="testP">F</p>
+    </div>
+    <div>
+        <table id="testTable" class="center">
+            <thead>
+                <tr id="tabHead">
+                    <th>Card</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="scripts/game.js"></script>
 </body>
 </html>

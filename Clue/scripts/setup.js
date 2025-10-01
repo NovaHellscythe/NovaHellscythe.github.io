@@ -50,5 +50,5 @@ function isValidHand(hand) {
 }
 
 function isValidCard(card) {
-    return ((FULLDECK.Characters.indexOf(card) > -1) || (FULLDECK.Weapons.indexOf(card)  > -1) || (FULLDECK.Characters.indexOf(card) > -1))
+    return (Object.values(FULLDECK).flat().indexOf(card) > -1)
 }
